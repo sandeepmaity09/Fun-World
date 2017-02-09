@@ -1,0 +1,83 @@
+body{
+	background-color: #e8c129;
+}
+
+
+.container{
+	background-color: lightblue;
+}
+
+
+
+.header-wrapper{
+	text-align: center;
+	font-family: serif; 
+	background-color: lightpink;
+}
+
+#changing{
+	text-align: center;
+}
+
+.row-wrapper{
+	border: 5px solid #8634a9;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.col-sm-6{
+	border: 2px solid black;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	text-align: center;
+}
+
+.col-sm-3{
+	text-align: center;
+}
+
+#learning{
+	text-align: center;
+	color:red;
+	font-family: Sofia;
+}
+
+#form-row-1{
+	border:2px solid black;
+	margin:2px;
+	padding:2px;
+}
+
+#form-row-2{
+	border:2px solid black;
+	margin:2px;
+	padding:2px;
+}
+
+#form-row-3{
+	border:2px solid black;
+	margin:2px;
+	padding:2px;
+}
+
+#form-row-4{
+	border:2px solid black;
+	margin:2px;
+	padding:2px;
+}
+
+.emptylines{
+	margin:5px;
+}
+
+.math-functions{
+	text-align: center;
+}
+
+.color-function{
+	background-color: #19e589;
+}
+
+.math-drawings{
+	text-align: center;
+}

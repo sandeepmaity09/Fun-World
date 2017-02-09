@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Fun With Js</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="assest/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Sofia">
+	<link rel="stylesheet" type="text/css" href="jsfun.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="header-wrapper">
+			<h1>Fun World</h1>
+			<p>Fun with JavaScript Codes</p>
+		</div>
+	
+		<div class="row">
+			<div class="col-sm-3">
+				<button class="btn btn-info" onclick="changeMe()">Change My Text</button>
+			</div>
+			<div class="col-sm-6">
+				<h2 id="changeM">I'm going to be changed.</h2>
+			</div>
+			<div class="col-sm-3">
+				<button class="btn btn-warning" onclick="rechangeMe()">Go to Previous State
+				</button>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-3">
+				<button class="btn btn-danger" onclick="showTimer()">Start the Timer</button>
+			</div>
+			<div class="col-sm-6">
+				<h2 id="showTimers">Please Start Me.</h2>
+			</div>
+			<div class="col-sm-3">
+				<button class="btn btn-success" onclick="stopTimer()">Stop the Timer
+				</button>
+			</div>
+		</div>
+
+		<div class="row row-wrapper">
+			<div class="col-sm-2">
+				<button class="btn btn-default" onclick="greyMe()">Grey Me</button>
+			</div>
+			<div class="col-sm-2">
+				<button class="btn btn-primary" onclick="blueMe()">Blue Me</button>
+			</div>			
+				<div class="col-sm-2">
+					<button class="btn btn-success" onclick="greenMe()">Green Me</button>
+			</div>			
+			<div class="col-sm-2">
+				<button class="btn btn-info" onclick="skyMe()">Sky Me</button>
+			</div>			
+			<div class="col-sm-2">
+				<button class="btn btn-warning" onclick="orangeMe()">Orange Me</button>
+			</div>			
+			<div class="col-sm-2">
+				<button class="btn btn-danger" onclick="redMe()">Red Me</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<h1 id="changing">Give Me Colors</h1>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12">
+			<h1 id="learning"><span class="marquee"><marquee>Let's Learn Math With Me</marquee></span></h1>
+			</div>
+		</div>
+
+		<div class="form-wrapper">
+			<div class="row" id="form-row-1">
+				<div class="col-sm-2 col-md-2">
+					<input id="add-num-1" type="number" name="number1"/>
+				</div>
+				<div class="col-sm-2 col-md-2">
+					<input type="text" name="add" value="+" disabled/>
+				</div>
+				<div class="col-sm-2 col-md-2">
+					<input id="add-num-2" type="number" name="number2"/>
+				</div>
+				<div class="col-sm-2 col-md-2">
+					<input type="text" name="evaluate" value="=" disabled/>
+				</div>
+				<div class="col-sm-2 col-md-2">
+					<input id="add-num-show" type="number" name="text" disabled/>
+				</div>
+				<div class="col-sm-2 col-md-2">
+					<button class="btn btn-success math-button" onclick="addMe()">Add Me</button>
+				</div>
+			</div>
+
+			<div class="row" id="form-row-2">
+				<div class="col-sm-2 col-md-2">
+					<input id="sub-num-1" type="number" name="number1"/>
+				</div>
+				<div class="col-sm-2 col-md-2">
+					<input type="text" name="sub" value="-" disabled/>
+				</div>
+				<div class="col-sm-2 col-md-2">
+					<input id="sub-num-2" type="number" name="number2"/>
+				</div>
+				<div class="col-sm-2 col-md-2">
+					<input type="text" name="evaluate" value="=" disabled/>
+				</div>
+				<div class="col-sm-2 col-md-2">
+					<input id="sub-num-show" type="number" name="text" disabled/>
+				</div>
+				<div class="col-sm-2 col-md-2">
+					<button class="btn btn-success math-button" onclick="subtractMe()">Subtract Me</button>
+				</div>
+			</div>
+
+			<div class="row" id="form-row-3">
+				<div class="col-sm-2 col-md-2">
+					<input id="mul-num-1" type="number" name="number1"/>
+				</div>
+				<div class="col-sm-2 col-md-2">
+					<input type="text" name="add" value="*" disabled/>
+				</div>
+				<div class="col-sm-2 col-md-2">
+					<input id="mul-num-2" type="number" name="number2"/>
+				</div>
+				<div class="col-sm-2 col-md-2">
+					<input type="text" name="evaluate" value="=" disabled/>
+				</div>
+				<div class="col-sm-2 col-md-2">
+					<input id="mul-num-show" type="number" name="text" disabled/>
+				</div>
+				<div class="col-sm-2 col-md-2">
+					<button class="btn btn-success math-button" onclick="multiplyMe()">Multiply Me</button>
+				</div>
+			</div>
+
+			<div class="row" id="form-row-4">
+				<div class="col-sm-2 col-md-2">
+					<input id="div-num-1" type="number" name="number1"/>
+				</div>
+				<div class="col-sm-2 col-md-2">
+					<input type="text" name="add" value="/" disabled/>
+				</div>
+				<div class="col-sm-2 col-md-2">
+					<input id="div-num-2" type="number" name="number2"/>
+				</div>
+				<div class="col-sm-2 col-md-2">
+					<input type="text" name="evaluate" value="=" disabled/>
+				</div>
+				<div class="col-sm-2 col-md-2">
+					<input id="div-num-show" type="number" name="text" disabled/>
+				</div>
+				<div class="col-sm-2 col-md-2">
+					<button class="btn btn-success math-button" onclick="divideMe()">Divide Me</button>
+				</div> 
+			</div>
+		</div>
+		<div class="row emptylines">
+		</div>
+		<div class="row emptylines">
+		</div>
+		<div class="row math-functions">
+			<div class="col-sm-2 col-md-2">
+				<button class="btn btn-success color-function" onclick="drawCircle()">Circle</button>
+			</div>
+			<div class="col-sm-2 col-md-2">
+				<button class="btn btn-success color-function" onclick="drawRectange()">Rectangle</button>
+			</div>
+			<div class="col-sm-2 col-md-2">
+				<button class="btn btn-success color-function">Cylinder</button>
+			</div>
+			<div class="col-sm-2 col-md-2">
+				<button class="btn btn-success color-function">Pentagon</button>
+			</div>
+			<div class="col-sm-2 col-md-2">
+				<button class="btn btn-success color-function">Hexagon</button>
+			</div>
+			<div class="col-sm-2 col-md-2">
+				<button class="btn btn-success color-function">Cube</button>
+			</div>
+		</div>
+		<div class="row math-drawings">
+			<div class="col-sm-12 col-md-12">
+				<canvas id="drawCanvas"></canvas>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="jsfun.js"></script>
+	<script type="text/javascript" src="assest/jquery.min.js"></script>
+	<script type="text/javascript" src="assest/js/bootstrap.min.js"></script>
+	<script type="text/JavaScript" src="assest/jsDraw2D.js"></script>
+</body>
+</html>
