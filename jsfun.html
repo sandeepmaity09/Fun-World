@@ -10,7 +10,7 @@
 </head>
 
 <body>
-	<div class="container">
+	<div class="container" id="new-container">
 		<div class="header-wrapper">
 			<h1>Fun World</h1>
 			<p>Fun with JavaScript Codes</p>
@@ -165,27 +165,37 @@
 		</div>
 		<div class="row math-functions">
 			<div class="col-sm-2 col-md-2">
-				<button class="btn btn-success color-function" onclick="drawCircle()">Circle</button>
+				<button id="draw-circle" class="btn btn-success color-function">Circle</button>
 			</div>
 			<div class="col-sm-2 col-md-2">
-				<button class="btn btn-success color-function" onclick="drawRectange()">Rectangle</button>
+				<button id="draw-rectangle" class="btn btn-success color-function">Rectangle</button>
 			</div>
 			<div class="col-sm-2 col-md-2">
-				<button class="btn btn-success color-function">Cylinder</button>
+				<button id="draw-heart" class="btn btn-success color-function">Heart</button>
 			</div>
 			<div class="col-sm-2 col-md-2">
-				<button class="btn btn-success color-function">Pentagon</button>
+				<button id="draw-pentagon" class="btn btn-success color-function">Pentagon</button>
 			</div>
 			<div class="col-sm-2 col-md-2">
-				<button class="btn btn-success color-function">Hexagon</button>
+				<button id="draw-hexagon" class="btn btn-success color-function">Hexagon</button>
 			</div>
 			<div class="col-sm-2 col-md-2">
 				<button class="btn btn-success color-function">Cube</button>
 			</div>
 		</div>
+
 		<div class="row math-drawings">
-			<div class="col-sm-12 col-md-12">
-				<canvas id="drawCanvas"></canvas>
+			<div class="col-sm-2 col-md-2" id="math-drawing-circle">
+			</div>
+			<div class="col-sm-2 col-md-2" id="math-drawing-rectangle">
+			</div>
+			<div class="col-sm-2 col-md-2" id="math-drawing-heart">
+			</div>
+			<div class="col-sm-2 col-md-2" id="math-drawing-pentagon">
+			</div>
+			<div class="col-sm-2 col-md-2" id="math-drawing-hexagon">
+			</div>
+			<div class="col-sm-2 col-md-2" id="math-drawing-cube">
 			</div>
 		</div>
 	</div>
@@ -193,6 +203,7 @@
 	<script type="text/javascript" src="jsfun.js"></script>
 	<script type="text/javascript" src="assest/jquery.min.js"></script>
 	<script type="text/javascript" src="assest/js/bootstrap.min.js"></script>
-	<script type="text/JavaScript" src="assest/jsDraw2D.js"></script>
+	<!--<script type="text/JavaScript" src="assest/jsDraw2D.js"></script>-->
+	<script type="text/javascript" src="assest/jafunjquery.js"></script>
 </body>
 </html>
